@@ -1,0 +1,97 @@
+$size1: 1rem;
+$size2: 2rem;
+$size3: 3rem;
+$size4: 4rem;
+$size5: 5rem;
+$size6: 6rem;
+$size10: 10rem;
+$size15: 15rem;
+
+ion-header {
+  --ion-text-color: #95D2EC;
+  text-align: center;
+}
+
+ion-content {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  --ion-background-color: linear-gradient(#3C91B5 , #398aac);
+  --ion-text-color: #95D2EC;
+  font-weight: bold;
+}
+
+ion-grid {
+  position: fixed;
+  bottom: 0%;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  align-self: space-between;
+  margin-right: $size1;
+  margin-left: $size1;
+
+}
+
+.main {
+  text-align: center;
+  height: 40%;
+  margin-top: $size1;
+}
+
+.city {
+  font-size: $size4;
+
+  @media (height > 750px) {
+    font-size: $size5;
+  }
+}
+
+.date, .description {
+  font-size: $size2;
+
+  @media (height > 750px) {
+    font-size: $size3;
+  }
+}
+
+.temperature{
+  font-size: $size4;
+
+  @media (height > 750px) {
+    font-size: $size6;
+  }
+}
+
+.date{
+  padding-bottom: $size2;
+}
+
+.icon {
+  font-size: $size10;
+  margin-top: $size1;
+  margin-bottom: -1rem;
+
+
+  @media (height> 750px) {
+    font-size: $size15;
+
+  }
+
+}
+
+.icon-small {
+  filter: drop-shadow(4px 2px 1px var(--ion-color-new-shade));
+  font-size: 1.6rem;
+
+  @media (height > 750px) {
+    filter: drop-shadow(6px 3px 1px var(--ion-color-new-shade));
+    font-size: 2rem;
+  }
+}
+
+.day, .precipitation, .max-temperature, .min-temperature {
+  @media (height > 750px) {
+    font-size: 1rem;
+  }
+}
