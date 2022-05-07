@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { WeatherService } from '../services/weather.service';
 
 @Component({
@@ -6,8 +6,8 @@ import { WeatherService } from '../services/weather.service';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
-  private res;
+export class HomePage implements OnInit {
+  public res;
 
   constructor(
     private weatherApi: WeatherService) {}
